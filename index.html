@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+        <link rel="stylesheet" href="css/style-minified.css">
+
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Natours | Exciting tours for adventurous people</title>
+    </head>
+    <body>
+        <nav class="fixed-navigation">
+
+            <!--hidden checkbox to hack-->
+            <input id="menu" type="checkbox" class="hidden-input">
+
+            <!--green bg fills up background-->
+            <div class="fixed-navigation__bg fixed-navigation__bg--green"></div>
+
+            <!--menu button-->
+            <label for="menu" class="fixed-navigation__button-circle">
+                <span class="fixed-navigation__button"></span>
+            </label>
+
+            <!--Navigatio bar-->
+            <div class="fixed-navigation__list-box">
+                <ul class="fixed-navigation__list">
+                    <li class="fixed-navigation__list-item">
+                        <a href="#about" class="fixed-navigation__link">
+                            <span class="number">01</span>about&nbsp;natours
+                        </a>
+                    </li>
+                    <li class="fixed-navigation__list-item">
+                        <a href="#features" class="fixed-navigation__link">
+                            <span class="number">02</span>your&nbsp;benefits
+                        </a>
+                    </li>
+                    <li class="fixed-navigation__list-item">
+                        <a href="#prices" class="fixed-navigation__link">
+                            <span class="number">03</span>popular&nbsp;tours
+                        </a>
+                    </li>
+                    <li class="fixed-navigation__list-item">
+                        <a href="#reviews" class="fixed-navigation__link">
+                            <span class="number">04</span>stories
+                        </a>
+                    </li>
+                    <li class="fixed-navigation__list-item">
+                        <a href="#bookings" class="fixed-navigation__link">
+                            <span class="number">05</span>book&nbsp;now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="header__logo-box">
+                <img class="header__logo" src="img/logo-white.png" alt="logo">
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading">
+                    <span class="heading--main">OUTDOORS</span>
+                    <span class="heading--sub">IS WHERE LIFE HAPPENS</span>
+                </h1>
+                <a href="#prices" class="btn btn--white btn--animated">discover our tours</a>
+            </div>
+        </header>  
+        
+        <main>
+            <section class="section-about" id="about">
+                <div class="u-center-text u-margin-bottom-large">
+                    <h2 class="heading-secondary">EXCITING TOURS FOR ADVENTUROUS PEOPLE</h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">YOU'RE GOING TO FALL IN LOVE WITH NATURE</h3>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+                        <h3 class="heading-tertiary u-margin-bottom-small">LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE</h3>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.</p>
+                        <a href="#" class="btn-learn">Learn more &rarr;</a>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="stack-gallery">
+
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                                 alt="p1" 
+                                 sizes="(max-width: 62em) 21vw, (max-width: 48em) 19vw, (max-width: 36em) 13vw"
+                                 src="img/nat-1-large.jpg"
+                                 class="stack-gallery__photo stack-gallery__photo--p1">
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                                 alt="p2" 
+                                 sizes="(max-width: 62em) 21vw, (max-width: 48em) 19vw, (max-width: 36em) 13vw"
+                                 src="img/nat-2-large.jpg"
+                                 class="stack-gallery__photo stack-gallery__photo--p2">
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                                 alt="p3" 
+                                 sizes="(max-width: 62em) 21vw, (max-width: 48em) 19vw, (max-width: 36em) 13vw"
+                                 src="img/nat-3-large.jpg"
+                                 class="stack-gallery__photo stack-gallery__photo--p3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-features" id="features">
+                <div class="row u-center-text">
+                    <div class="col-1-of-4">
+                        <div class="features">
+                            <i class="features__icon u-margin-bottom-small icon-basic-world"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">EXPLORE THE WORLD</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-1-of-4">
+                        <div class="features">
+                            <i class="features__icon u-margin-bottom-small icon-basic-compass"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">MEET NATURE</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="features">
+                            <i class="features__icon u-margin-bottom-small icon-basic-map"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">FIND YOUR WAY</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="features">
+                            <i class="features__icon u-margin-bottom-small icon-basic-heart"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">LIVE A HEALTHIER LIFE</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-prices" id="prices">
+                <div class="u-center-text u-margin-bottom-large">
+                    <h2 class="heading-secondary">MOST POPULAR TOURS</h2>
+                </div>
+                <div class="row u-center-text">
+                    <div class="col-1-of-3">
+                        <div class="card-rotatable">
+                            <div class="card-rotatable__side card-rotatable__side--front">
+                                <div class="card-rotatable__header">
+                                    <div class="blended-image blended-image--clipped blended-image__1">
+                                    </div>
+                                    <h4 class="blended-image__overlay-heading">
+                                        <span class="blended-image__overlay-heading-span blended-image__overlay-heading-span blended-image__overlay-heading-span--orange blended-image__overlay-heading-span--right">the sea explorer</span>
+                                    </h4>
+                                </div>
+                                <div class="card-rotatable__body">
+                                    <ul class="features-list features-list--center">
+                                        <li>3-day tours</li>
+                                        <li>Up to 30 people</li>
+                                        <li>2 tour guides</li>
+                                        <li>Sleep in cozy hotels</li>
+                                        <li>Difficulty: easy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-rotatable__side card-rotatable__side--back card-rotatable__side--back--orange">
+                                <div class="section-prices__box">
+                                    <p class="price-only">ONLY</p>
+                                    <p class="price u-margin-bottom-medium">$297</p>
+                                    <a href="#booking-popup" class="btn btn--white">BUY NOW!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-1-of-3">
+                        <div class="card-rotatable">
+                            <div class="card-rotatable__side card-rotatable__side--front">
+                                <div class="card-rotatable__header">
+                                    <div class="blended-image blended-image--clipped blended-image__2">
+                                    </div>
+                                    <h4 class="blended-image__overlay-heading">
+                                        <span class="blended-image__overlay-heading-span blended-image__overlay-heading-span blended-image__overlay-heading-span--green blended-image__overlay-heading-span--right">the forest hiker</span>
+                                    </h4>
+                                </div>
+                                <div class="card-rotatable__body">
+                                    <ul class="features-list--center features-list">
+                                        <li>7-day tours</li>
+                                        <li>Up to 40 people</li>
+                                        <li>6 tour guides</li>
+                                        <li>Sleep in provident hotels</li>
+                                        <li>Difficulty: medium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-rotatable__side card-rotatable__side--back card-rotatable__side--back--green">
+                                <div class="section-prices__box">
+                                    <p class="price-only">ONLY</p>
+                                    <p class="price u-margin-bottom-medium">$497</p>
+                                    <a href="#booking-popup" class="btn btn--white">BUY NOW!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3">
+                        <div class="card-rotatable">
+                            <div class="card-rotatable__side card-rotatable__side--front">
+                                <div class="card-rotatable__header">
+                                    <div class="blended-image blended-image--clipped blended-image__3">
+                                    </div>
+                                    <h4 class="blended-image__overlay-heading">
+                                        <span class="blended-image__overlay-heading-span blended-image__overlay-heading-span blended-image__overlay-heading-span--blue blended-image__overlay-heading-span--right">the snow adventurer</span>
+                                    </h4>
+                                </div>
+                                <div class="card-rotatable__body">
+                                    <ul class="features-list--center features-list">
+                                        <li>5-day tours</li>
+                                        <li>Up to 15 people</li>
+                                        <li>3 tour guides</li>
+                                        <li>Sleep in provident hotels</li>
+                                        <li>Difficulty: hard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-rotatable__side card-rotatable__side--back card-rotatable__side--back--blue">
+                                <div class="section-prices__box">
+                                    <p class="price-only">ONLY</p>
+                                    <p class="price u-margin-bottom-medium">$897</p>
+                                    <a href="#booking-popup" class="btn btn--white">BUY NOW!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-large">
+                    <a href="#" class="btn btn--green">discover all tours</a>
+                </div>
+            </section>
+
+            <section class="section-reviews" id="reviews">
+                <div class="bg-video">
+                    <video class="bg-video__content">
+                        <source src="img/video.mp4" type="video/mp4">
+                        <source src="img/video.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="u-center-text u-margin-bottom-large">
+                    <h2 class="heading-secondary">We make people genuinely happy</h2>
+                </div>
+                <div class="row">
+                    <div class="review-box">
+                        <div class="review-box__fig">
+                            <img src="img/nat-8.jpg" alt="girl in boat" class="review-box__fig-img">
+                            <figcaption class="review-box__fig-caption">mary smith</figcaption>  
+                        </div>
+                        <div class="review-box-text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">I HAD THE BEST WEEK EVER WITH MY FAMILY</h3>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+                        </div>
+                    </div>
+                    <div class="review-box">
+                        <div class="review-box__fig">
+                            <img src="img/nat-9.jpg" alt="girl in boat" class="review-box__fig-img">
+                            <figcaption class="review-box__fig-caption">Jack wilson</figcaption>  
+                        </div>
+                        <div class="review-box-text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">WOW! MY LIFE IS COMPLETELY DIFFERENT NOW</h3>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text">
+                    <a href="" class="btn-learn">Read all stories &rarr;</a> 
+                </div>                
+            </section>
+
+            <section class="section-bookings" id="bookings">
+                <div class="row">
+                    <div class="section-bookings__box">
+                        <div class="section-bookings__form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">Start booking now</h2>
+                            </div>
+                            <form action="" class="custom-form" spellcheck="false">
+                                <div class="custom-form__group">
+                                    <input type="text" id="name" placeholder="Full name" class="custom-form__input" required>
+                                    <label for="name" class="custom-form__label custom-form__label--animated">Full name</label>
+                                </div>
+                                <div class="custom-form__group">
+                                    <input type="email" class="custom-form__input" id="email" placeholder="Email address" required>
+                                    <label for="name" class="custom-form__label custom-form__label--animated">Email Address</label>
+                                </div>
+                                <div class="custom-form__group">
+                                    <input class="default__radio" type="radio" name="count" id="small" value="small">
+                                    <label for="small" class="custom-form__radio-label">
+                                        <span class="custom-form__radio"></span>
+                                        Small tour group
+                                    </label>
+                                    <input class="default__radio" type="radio" name="count" id="large" value="large">
+                                    <label for="large" class="custom-form__radio-label">
+                                        <span class="custom-form__radio"></span>
+                                        Large tour group
+                                    </label>
+                                </div>
+                                <div class="u-margin-top-medium">
+                                    <input type="submit" class="btn btn--green" value="Next step &rarr;">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__logo-box">
+
+                <!--art direction: differrent images at different screen sizes-->
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 48em)">
+
+                    <!--density switching: same image of 2 different resolutions for screens with high and low dpi-->
+                    <img srcset="img/logo-green-2x.png 2x, img/logo-green-1x.png 1x" alt="logo" src="img/logo-green-2x.png">
+                </picture>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__navigation__list">
+                            <li class="footer__navigation__list-item"><a href="#" class="footer__link">company</a></li>
+                            <li class="footer__navigation__list-item"><a href="#" class="footer__link">contact us</a></li>
+                            <li class="footer__navigation__list-item"><a href="#" class="footer__link">careers</a></li>
+                            <li class="footer__navigation__list-item"><a href="#" class="footer__link">privacy policy</a></li>
+                            <li class="footer__navigation__list-item"><a href="#" class="footer__link">terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="footer__copy-right">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quos aspernatur eum, ut omnis ad, et maiores labore laudantium assumenda quidem veritatis deserunt commodi modi eaque animi tempore optio doloribus?</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="pop-up" id="booking-popup">
+            <div class="pop-up__content">
+                <a href="#pricing" class="pop-up__close">&times;</a>
+                <div class="pop-up__left">
+                    <img src="img/nat-8.jpg" alt="tour" class="pop-up__img"><img src="img/nat-9.jpg" alt="tour" class="pop-up__img">
+                </div>
+                <div class="pop-up__right">
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">IMPORTANT &ndash; PLEASE READ THESE TERMS BEFORE BOOKING</h3>
+                    <p class="pop-up__text u-margin-bottom-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi porta.</p>
+                    <a href="#" class="btn btn--green">book now</a>
+                </div>
+            </div>
+        </div>
+
+        <script lang="text/javascript">
+            var nav_links=document.querySelectorAll(".fixed-navigation .fixed-navigation__link");
+            nav_links.forEach(function(nav_link) {
+                nav_link.addEventListener("click",function(){
+                document.querySelector(".fixed-navigation .hidden-input").checked = false;
+            })});
+        </script>
+    </body>
+</html>
