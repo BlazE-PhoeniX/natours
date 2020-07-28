@@ -1,0 +1,128 @@
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2500;
+    background: rgba(#000, .8);
+    transition: all .3s;
+    
+    // graceful degradation for older browsers
+    @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)){
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(#000, .6);
+    }
+
+    //hide the popup
+    opacity: 0;
+    visibility: hidden;
+
+    &__content {
+        width: 75%;
+        background-color: #fff;
+        border-radius: 3px;
+        overflow: hidden;
+        display: table;
+        box-shadow: 0 1.5rem 5rem rgba(#000, .15);
+        @include centerWithAbs;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .2s .2s;
+
+        @include breakpoint(lap){
+            display: block;
+        }
+
+        @include breakpoint(phone){
+            width: 90%;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 3rem;
+        line-height: 1;
+        text-decoration: none;
+        color: #777;
+
+        &:hover {
+            color: $color-green-primary;
+        }
+    }
+
+    &__left {
+        width: 33.33%;
+        display: table-cell;
+        
+        @include breakpoint(lap) {
+            width: 100%;
+            display: block;
+        }
+    }
+    
+    &__right {
+        width: 66.67%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+
+        @include breakpoint(lap) {
+            width: 100%;
+            display: block;
+            height: 30rem;
+            overflow: scroll;
+        }
+
+        @include breakpoint(tab-port) {
+            padding: 3rem;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+
+        @include breakpoint(lap) {
+            width: 50%;
+            display: inline-block;
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+
+        //split text into 2 columns
+        // column-count: 2;
+        // column-gap: 4rem;
+        // column-rule: 1px solid #eee;
+
+        text-align: justify;
+        height: 15rem;
+        overflow: scroll;
+        padding-right: 2rem;
+
+        //add hyphens to incomplete words
+        hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+
+        @include breakpoint(lap) {
+            height: auto;
+            overflow: visible;
+        }
+    }
+
+    //show popup function
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

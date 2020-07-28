@@ -1,0 +1,74 @@
+.review-box {
+    width: 75%;
+    margin: 0 auto;
+    background: rgba($color-white, .6);
+    padding: 6rem;
+    padding-left: 9rem;
+    transform: skewX(-12deg);
+    box-shadow: 0 3rem 6rem rgba(#000, .1);
+    margin-bottom: 6rem;
+    @include clearfix;
+
+    & > * {
+        transform: skewX(12deg);
+
+        @include breakpoint(phone){
+            transform: skewX(0);
+        }
+    }
+
+    &__fig {
+        height: 15rem;
+        width: 15rem;
+        float: left;
+        overflow: hidden;
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg);
+        shape-outside: circle(50%);
+        -webkit-shape-outside: circle(50%);
+
+        @include breakpoint(phone){
+            transform: translateX(-3rem) skewX(0);
+        }
+        
+        &-img {
+            height: 100%;
+            transform: scale(1.3) translateX(-3rem);
+            transition: all .4s;
+        }
+
+        &-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 20%);
+            opacity: 0;
+            transition: all .4s;
+            text-transform: uppercase;
+            color: $color-white;
+            font-size: $default-font-size;
+            text-align: center;
+            text-align: justify;
+        }
+    }
+
+    &:hover &__fig-img {
+        transform: scale(1) translateX(-3rem);
+        filter: blur(5px) brightness(90%);
+    }
+
+    &:hover &__fig-caption {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    @include breakpoint(tab-land){
+        width: 100%;
+        padding: 3rem;
+        padding-left: 6rem;
+    }
+
+    @include breakpoint(phone){
+        transform: skewX(0);
+    }
+}

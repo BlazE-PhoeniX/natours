@@ -1,0 +1,75 @@
+.blended-image {
+    background-size: cover !important;
+    height: 100%;
+    background-blend-mode: screen;
+    position: relative;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+    &--clipped {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    &__1 {
+        background: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark), url(../img/nat-5.jpg)
+    }
+
+    &__2 {
+        background: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/nat-6.jpg)
+    }
+
+    &__3 {
+        background: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark), url(../img/nat-7.jpg)
+    }
+
+    &__overlay-heading {
+        width: 75%;
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 1.5rem;
+        text-align: right;
+
+        &--orange {
+            background:linear-gradient(to right bottom, rgba($color-orange-light, .8), rgba($color-orange-dark, .8));
+            color: $color-white;
+        }
+
+        &--green {
+            background:linear-gradient(to right bottom, rgba($color-green-light, .8), rgba($color-green-dark, .8));
+            color: $color-white;
+        }
+
+        &--blue {
+            background:linear-gradient(to right bottom, rgba($color-blue-light, .8), rgba($color-blue-dark, .8));
+            color: $color-white;
+        }
+
+        &--right {
+            text-align: right;
+        }
+    }
+
+    &__overlay-heading-span {
+        font-weight: 300;
+        padding: .75rem 1rem;
+        box-decoration-break: clone !important;
+        -webkit-box-decoration-break: clone;
+
+        &--orange {
+            background:linear-gradient(to right bottom, rgba($color-orange-light, .8), rgba($color-orange-dark, .8));
+            color: $color-white;
+        }
+
+        &--green {
+            background:linear-gradient(to right bottom, rgba($color-green-light, .8), rgba($color-green-dark, .8));
+            color: $color-white;
+        }
+
+        &--blue {
+            background:linear-gradient(to right bottom, rgba($color-blue-light, .8), rgba($color-blue-dark, .8));
+            color: $color-white;
+        }
+    }
+}
