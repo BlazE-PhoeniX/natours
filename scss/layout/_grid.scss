@@ -1,0 +1,54 @@
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  padding: 0 $grid-padding;
+
+  @include breakpoint(tab-land) {
+    max-width: 70rem;
+  }
+
+  @include breakpoint(phone) {
+    max-width: 50rem;
+  }
+
+  &:not(:last-child){
+    margin-bottom: $grid-vg;
+  }
+
+  @include clearfix;
+  
+  [class^="col-"] {
+    float: left;
+    
+    &:not(:last-child){
+      margin-right: $grid-hg;
+    }
+
+    @include breakpoint(tab-land) {
+      width: 100% !important;
+      margin-right: 0;
+      float: none;
+      margin-bottom: $grid-vg;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc( ( 100% - #{$grid-hg} ) / 2 );
+  }
+  
+  .col-1-of-3 {
+    width: calc( ( 100% - 2 * #{$grid-hg} ) / 3 );
+  }
+
+  .col-2-of-3 {
+    width: calc( 100% - #{$grid-hg} - ( ( 100% - 2 * #{$grid-hg} ) / 3 ) );
+  }
+
+  .col-1-of-4 {
+    width: calc( ( 100% - 3 * #{$grid-hg} ) / 4 );
+  }
+
+  .col-3-of-4 {
+    width: calc( 100% - #{$grid-hg} - ( ( 100% - 3 * #{$grid-hg} ) / 4 ) );
+  }
+}

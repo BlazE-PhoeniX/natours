@@ -1,0 +1,31 @@
+//*partials
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+@import "components/blended-image";
+@import "components/button";
+@import "components/card-rotatable";
+@import "components/custom-form";
+@import "components/features";
+@import "components/features-list";
+@import "components/pop-up";
+@import "components/review-box";
+@import "components/stack-gallery";
+
+@import "layout/fixed-navigation";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+
+@import "pages/home";
+
+
+
+
