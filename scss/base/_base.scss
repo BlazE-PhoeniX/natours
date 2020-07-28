@@ -1,0 +1,38 @@
+:root {
+  font-size: 62.5%;
+
+  @include breakpoint(desk) {
+    font-size: 75%;
+  }
+
+  @include breakpoint(lap) {
+    font-size: 56.25%;
+  }
+
+  @include breakpoint(tab-port) {
+    font-size: 50%;
+  }
+}
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7em;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Lato";
+  padding: 3rem;
+  color: $color-grey-dark;
+
+  @include breakpoint(tab-port) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-green-primary;
+  color: $color-white;
+}
